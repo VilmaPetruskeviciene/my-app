@@ -1,4 +1,8 @@
 import './App.css';
+import Dogs1 from './Components/005/Dogs1';
+import Dogs2 from './Components/005/Dogs2';
+import Dogs3 from './Components/005/Dogs3';
+import Dogs4 from './Components/005/Dogs4';
 import KatesSunys from './Components/005/KatesSunys';
 import Kn from './Components/005/Kn';
 import Kosmosas from './Components/005/Kosmosas';
@@ -8,8 +12,8 @@ import Spalvotas from './Components/005/Spalvotas';
 import ZebraiIrBebrai from './Components/005/ZebraiIrBebrai';
 import rand from './Functions/rand';
 
+const dogs1 = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
 const yel = 'yellow';
-
 const ms = {color: yel, backgroundColor: 'skyblue'};
 const mas = ['Pilkis', 'Murkis', 'Gagarinas'];
 const tex = 'Hello World';
@@ -23,6 +27,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {dogs1.map((n, i) => <Dogs1 key={i} name={n}></Dogs1>)}
+        {[...dogs1].sort((a, b) => b.length - a.length).map((n, i) => <Dogs2 key={i} index={i} name={n}></Dogs2>)}
+        {dogs1.map((n, i) => <Dogs3 key={i} index={i} name={n}></Dogs3>)}
+        {dogs1.map((n, i) => <Dogs4 key={i} index={i} name={n}></Dogs4>)}
         <LabasZuiki></LabasZuiki>
         <PropsH1 tekstas={tex}></PropsH1>
         <ZebraiIrBebrai zeb={rand(1, 2)}></ZebraiIrBebrai>
