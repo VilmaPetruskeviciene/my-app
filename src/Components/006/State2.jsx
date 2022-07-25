@@ -5,8 +5,8 @@ function State2() {
 
     const [ap2, setAp2] = useState(50);
 
-    const kvadratas2 = {width: '150px',
-                        height: '150px',
+    const kvadratas2 = {width: '50px',
+                        height: '50px',
                         backgroundColor: 'white',
                         color: 'black',
                         marginTop: '20px',
