@@ -1,44 +1,30 @@
 import './App.css';
-import { useState } from "react";
-import randColor from './Functions/randColor';
-import Kv from './Components/JamesBond/Kv';
-import { useEffect } from 'react';
-// import Count from './Components/JamesBond/Count';
-import ForeverYoung from './Components/JamesBond/ForeverYoung';
+import State1 from './Components/006/State1';
+import State2 from './Components/006/State2';
+import State21 from './Components/006/state21';
+import State22 from './Components/006/State22';
+import State23 from './Components/006/State23';
+import State3 from './Components/006/State3';
+import State4 from './Components/006/State4';
+import State5 from './Components/006/State5';
+
 function App() {
-
-    const [kv, setKv] = useState([]);
-
-
-    const kvPressed = () => {
-        setKv(k => [...k, randColor()]);
-        // console.log('Ja Ja 1');
-    }
-
-    useEffect(() => {
-        if (kv.length === 0) {
-            return;
-        }
-
-        console.log('Ja Ja 2');
-
-    }, [kv]);
-
-
-
+  
     return (
-        <div className="App">
-            <header className="App-header">
-                <h1 onClick={kvPressed}>State</h1>
-                <div className="kv-bin">
-                    {
-                        kv.map((c, i) => <Kv key={i} c={c} i={i}></Kv>)
-                    }
-                </div>
-                <ForeverYoung/>
-            </header>
-        </div>
+      <div className="App">
+        <header className="App-header">
+          <State1></State1>
+          <State2></State2>
+          <State3></State3>
+          <State4></State4>
+          <State5></State5>
+          <State21></State21>
+          <State22></State22>
+          <State23></State23>
+        </header>
+      </div>
     );
-}
-
-export default App;
+  }
+  
+  export default App;
+  
