@@ -1,8 +1,6 @@
 import './App.css';
-import Checkbox from './Components/008/Checkbox';
-import Radio from './Components/008/Radio';
-import Select from './Components/008/Select';
-import Text from './Components/008/Text';
+import Forms1 from './Components/JamesBond/Forms1';
+import Forms2 from './Components/JamesBond/Forms2';
 
 
 function App() {
@@ -10,11 +8,9 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-            <h1>Form control</h1>
-            <Text></Text>
-            <Select></Select>
-            <Checkbox></Checkbox>
-            <Radio></Radio>
+            <h1>Hello</h1>
+            <Forms1></Forms1>
+            <Forms2></Forms2>
 
         </header>
       </div>
