@@ -34,7 +34,7 @@ function Forms1() {
       <>
       <fieldset>
         <legend>Forms1</legend>
-        <input type='number' onChange={a => setText(a.target.value)}></input>
+        <input type='text' onChange={a => setText(a.target.value)}></input>
         <div>
           <button onClick={skaicius}>Button</button>
         </div>
