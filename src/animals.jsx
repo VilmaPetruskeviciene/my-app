@@ -1,7 +1,6 @@
 
 import './App.css';
-import Books from './Components/Books/Books';
-
+import Animals from './Components/animals/Animals';
 
 
 function App() {
@@ -11,9 +10,9 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
+            <h1>Animals</h1>
+            <Animals></Animals>
             
-            <Books></Books>
-              
 
         </header>
       </div>
